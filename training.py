@@ -13,7 +13,7 @@ def data_split(data,ratio):
 
 
 if __name__ == "__main__":
-    df= pd.read_csv('C:\\Users\\Atul\\Desktop\\progs\\covidpredict\\data.csv')
+    df= pd.read_csv('data.csv')
     train, test = data_split(df,0.2)
     X_train = train[['age', 'fever', 'cough', 'shortnessofbreath', 'sorethroat', 'musclepain', 'nausea', 'diarrhoea', 'fatigue', 'vomiting', 'headache'] ].to_numpy()
     X_test = test[['age', 'fever', 'cough', 'shortnessofbreath', 'sorethroat', 'musclepain', 'nausea', 'diarrhoea', 'fatigue', 'vomiting', 'headache'] ].to_numpy()
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     clf = LogisticRegression()
     clf.fit(X_train, Y_train)
 
-    file = open('C:\\Users\\Atul\\Desktop\\progs\\covidpredict\\model.pkl', 'wb' )
+    file = open('model.pkl', 'wb' )
 
     pickle.dump(clf, file)
     file.close()
