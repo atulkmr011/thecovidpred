@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>COVID-19 Probability Detector</title>
+  </head>
+  <style>
+    .footer {
+      margin-top: 2%;
+      text-align: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(45deg, #008000, #000000, #F4483A);
+    background-size: 500% 500%;
+    animation: change-gradient 10s ease-in-out infinite;
+}
+  </style>
+  <body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">COVID-19 Probability Detector</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/atul-kumar-844b1437/">Link</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    
+    <div class="container" style="margin:auto;width:50%">
+      <h2 class="text-center mt-4">COVID 19 Probability Detector</h2>
+
+        <form action = "/" method = "POST">
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age" name = "age" placeholder="Enter Age">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Fever</label>
+            <select class="form-control custom-select" name = "fever" id="fever">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Cough</label>
+            <select class="form-control custom-select" name = "cough" id="cough">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">shortness of breath</label>
+            <select class="form-control custom-select" name = "shortnessofbreath" id="shortnessofbreath">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Sore Throat</label>
+            <select class="form-control custom-select" name = "sorethroat" id="sorethroat">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Muscle Pain</label>
+            <select class="form-control custom-select" name = "musclepain" id="musclepain">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Nausea</label>
+            <select class="form-control custom-select" name = "nausea" id="nausea">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Diarrhoea</label>
+            <select class="form-control custom-select" name = "diarrhoea" id="diarrhoea">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Fatigue</label>
+            <select class="form-control custom-select" name = "fatigue" id="fatigue">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Vomiting</label>
+            <select class="form-control custom-select" name = "vomiting" id="vomiting">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Headache</label>
+            <select class="form-control custom-select" name = "headache" id="headache">
+              <option value = "1">Yes</option>
+              <option value = "0">No</option>
+            </select>
+          </div>
+
+        
+
+
+          
+          <button class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      <div class='footer'>
+        
+        <strong class='footer-description'>Made by Atul Kumar.</strong>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
