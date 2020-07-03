@@ -3,7 +3,7 @@ app = Flask(__name__)
 import pickle
 
 
-file = open('C:\\Users\\Atul\\Desktop\\progs\\covidpredict\\model.pkl', 'rb')
+file = open('model.pkl', 'rb')
 clf = pickle.load(file)
 file.close()
 
